@@ -4,7 +4,7 @@ import { Bounce, ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import axios from "axios";
 import "../App.css";
-
+import vectorbg from "../assets/vectorbg.png"
 const Login = () => {
   const [responseData, setResponseData] = useState(null);
   const [email, setEmail] = useState("");
@@ -149,7 +149,7 @@ const Login = () => {
 
           <div className="login-bg flex justify-center items-center relative">
             <img
-              src="./src/assets/vectorbg.png"
+              src={vectorbg}
               className="object-contain z-0 rounded-r-xl rounded-l-lg"
               style={{
                 maxWidth: "100%",
