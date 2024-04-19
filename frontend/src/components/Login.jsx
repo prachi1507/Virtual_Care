@@ -4,7 +4,11 @@ import { Bounce, ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import axios from "axios";
 import "../App.css";
-import vectorbg from "../assets/vectorbg.png"
+import vectorbg from "../assets/vectorbg.png";
+import doctoricon from "../assets/doctoricon.png"
+import adminicon from "../assets/adminicon.png"
+import patienticon from  "../assets/patienticon.png"
+
 const Login = () => {
   const [responseData, setResponseData] = useState(null);
   const [email, setEmail] = useState("");
@@ -219,7 +223,7 @@ const Login = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="bg-violet-200 p-2 rounded-lg flex items-center justify-center">
                   <img
-                    src="./src/assets/doctoricon.png"
+                    src={doctoricon}
                     alt="Doctor"
                     className="h-12 w-12"
                   />
@@ -242,7 +246,7 @@ const Login = () => {
                 </div>
                 <div className="bg-violet-200 p-2 rounded-lg flex items-center justify-center">
                   <img
-                    src="./src/assets/adminicon.png"
+                    src={adminicon}
                     alt="Admin"
                     className="h-12 w-12"
                   />
@@ -262,7 +266,7 @@ const Login = () => {
                 </div>
                 <div className="bg-violet-200 p-2 rounded-lg flex items-center justify-center">
                   <img
-                    src="./src/assets/patienticon.png"
+                    src={patienticon}
                     alt="Patient"
                     className="h-12 w-12"
                   />
